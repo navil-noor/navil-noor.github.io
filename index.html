@@ -4,43 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navil's Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>Navil's Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <a class="navbar-brand" href="#">Navil's Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorials.html">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="posts.html">Posts</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
-    <main>
-        <section id="welcome">
-            <div class="container">
-                <h2>Welcome to My Blog</h2>
-                <p>Here you will find interesting information, projects using notebooks and some tutorials.</p>
-            </div>
-        </section>
+    </nav>
+    <main class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to My Blog</h1>
+            <p class="lead">Here you will find my projects, including Kaggle notebooks and other data science explorations.</p>
+        </div>
         <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <ul>
-                    <li><a href="notebooks/1_Eagle_or_Hawk.html">First project: Image Classifier</a></li>
-                    <!-- Add more links to your notebooks as needed -->
-                </ul>
-            </div>
+            <h2>Projects</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="notebooks/1_Eagle_or_Hawk.html">First project: Image Classifier</a></li>
+                <!-- Add more links to your notebooks as needed -->
+            </ul>
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Navil Noor. All rights reserved.</p>
-        </div>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Navil Noor. All rights reserved.</p>
     </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
