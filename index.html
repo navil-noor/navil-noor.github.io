@@ -8,7 +8,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Navil's Blog</a>
@@ -25,20 +25,20 @@
             </div>
         </div>
     </nav>
-    <main class="container mt-5">
+    <main class="container mt-5 flex-grow-1">
         <div class="jumbotron">
             <h1 class="display-4">Welcome to My Blog</h1>
-            <p class="lead">Here you will find my projects, including Kaggle notebooks and other data science explorations.</p>
+            <p class="lead">Here you will find posts, tutorials and information.</p>
         </div>
         <section id="projects">
-            <h2>Projects</h2>
+            <h2>Posts</h2>
             <ul class="list-group">
                 <li class="list-group-item"><a href="notebooks/1_Eagle_or_Hawk.html">First project: Image Classifier</a></li>
                 <!-- Add more links to your notebooks as needed -->
             </ul>
         </section>
     </main>
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p>&copy; 2024 Navil Noor. All rights reserved.</p>
     </footer>
     <!-- Bootstrap JS and dependencies -->
