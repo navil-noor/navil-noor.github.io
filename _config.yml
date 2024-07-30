@@ -1,0 +1,6 @@
+title: Navil's Blog
+description: My site containing my projects, writings and tutorials.
+baseurl: "/navil-noor.github.io"
+url: "https://navil-noor.github.io"
+
+remote_theme: "abhinavs/moonwalk"
